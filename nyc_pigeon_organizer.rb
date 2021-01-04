@@ -34,9 +34,8 @@ def nyc_pigeon_organizer(hash)
         new_hash[name][att].push(val.to_s)
       end
     end
-    binding.pry
-    new_hash
   end
+  new_hash
 end
 
 print nyc_pigeon_organizer(pigeon_data)
