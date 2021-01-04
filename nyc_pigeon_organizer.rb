@@ -19,8 +19,8 @@ pigeon_data = {
 
 def nyc_pigeon_organizer(hash)
   new_hash = {}
-  hash.each do |att, att_val|
-    att_val.each do |val, name|
+  hash.each do |att, att_vals|
+    att_vals.each do |val, name|
       if !new_hash[name]
         new_hash[name] = {
           color: [],
