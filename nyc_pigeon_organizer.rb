@@ -36,3 +36,4 @@ def nyc_pigeon_organizer(hash)
   end
 end
 
+print nyc_pigeon_organizer(pigeon_data)
