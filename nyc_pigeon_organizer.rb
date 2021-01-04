@@ -29,7 +29,7 @@ def nyc_pigeon_organizer(hash)
             lives: []
           }
         end
-        new_hash[name][att_vals].push(val.to_s)
+        new_hash[name][att].push(val.to_s)
       end
     end
     new_hash
