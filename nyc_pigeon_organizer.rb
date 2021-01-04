@@ -17,22 +17,3 @@ pigeon_data = {
   }
 }
 
-def nyc_pigeon_organizer(data)
-  new_hash = {}
-  data.each do |subkey, subhash|
-    subhash.each do |arrkey, arr|
-      arr.each do |name|
-        if new_hash[name] == nil
-          new_hash[name] = {}
-        end
-        if new_hash[name][subkey] == nil
-          new_hash[name][subkey] = []
-        end
-        new_hash[name][subkey].push(arrkey.to_s)
-      end
-    end
-  end
-  new_hash
-end
-
-puts nyc_pigeon_organizer(pigeon_data)
