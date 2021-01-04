@@ -1,3 +1,5 @@
+require 'pry'
+
 pigeon_data = {
   :color => {
     :purple => ["Theo", "Peter Jr.", "Lucky"],
@@ -32,6 +34,7 @@ def nyc_pigeon_organizer(hash)
         new_hash[name][att].push(val.to_s)
       end
     end
+    binding.pry
     new_hash
   end
 end
